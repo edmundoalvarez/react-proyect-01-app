@@ -1,5 +1,4 @@
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link } from "@nextui-org/react";
-import { Link as RouterLink } from "react-router-dom"; 
 
 const Header = () => {
   const idJudge = localStorage.getItem('id');
@@ -38,27 +37,27 @@ const Header = () => {
         </NavbarBrand>
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
           <NavbarItem>
-            <RouterLink color="foreground" to="/">
+            <Link color="foreground" href="/">
               Inicio
-            </RouterLink>
+            </Link>
           </NavbarItem>
           <NavbarItem>
-            <RouterLink color="foreground" to="/games">
+            <Link color="foreground" href="/games">
               Juegos
-            </RouterLink>
+            </Link>
           </NavbarItem>
           <NavbarItem>
             {localStorage.getItem('rol') === '1' && (
-              <RouterLink color="foreground" to="/judges">
+              <Link color="foreground" href="/judges">
                 Jueces
-              </RouterLink>
+              </Link>
             )}
           </NavbarItem>
           <NavbarItem>
             {localStorage.getItem('rol') === '2' && (
-              <RouterLink color="foreground" to={`/judges/${idJudge}`}>
+              <Link color="foreground" href={`/judges/${idJudge}`}>
                 Mi Perfil
-              </RouterLink>
+              </Link>
             )}
           </NavbarItem>
         </NavbarContent>
@@ -66,9 +65,9 @@ const Header = () => {
           {!sesionOn ? (
             <div className="flex flex-row gap-[30px]">
               <NavbarItem>
-                <RouterLink color="secondary" to="/login">
+                <Link color="secondary" href="/login">
                   Iniciar Sesión
-                </RouterLink>
+                </Link>
               </NavbarItem>
             </div>
           ) : (
