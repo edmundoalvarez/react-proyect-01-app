@@ -32,7 +32,7 @@ const Header = () => {
       <Navbar>
         <NavbarBrand>
           <h1 className="font-bold text-inherit text-2xl pb-1 border-b-3 border-purple-700">
-            Games Vote Awards 2023
+            Games Vote Awards 2024
           </h1>
         </NavbarBrand>
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
