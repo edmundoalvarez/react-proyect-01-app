@@ -6,7 +6,7 @@ const Header = () => {
         <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-white dark:text-white sm:mt-0">
             
             <li>
-                <p>Final - Edmundo Alvarez - Aplicaciónes Híbridas</p>
+                <p>Desarrollado por Edmundo Alvarez</p>
             </li>
         </ul>
         </div>
