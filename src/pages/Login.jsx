@@ -19,7 +19,7 @@ function Login(){
     const handleFormSubmit = (e) => {
         e.preventDefault()
 
-        fetch('http://localhost:2023/api/session', {
+        fetch('https://react-project-01-api.vercel.app/api/session', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

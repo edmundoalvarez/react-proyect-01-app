@@ -12,7 +12,7 @@ function GamesList(){
     const navigate = useNavigate()
 
     useEffect(()=>{
-        fetch('http://localhost:2023/games', {
+        fetch('https://react-project-01-api.vercel.app/games', {
             method: 'GET',
             headers: {
                 'auth-token': localStorage.getItem('token')

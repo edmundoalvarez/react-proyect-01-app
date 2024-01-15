@@ -10,7 +10,7 @@ const MyProfile = () => {
 
     useEffect(()=>{
 
-        fetch(`http://localhost:2023/judges/${idJudge}`)
+        fetch(`https://react-project-01-api.vercel.app/judges/${idJudge}`)
         .then((response)=>response.json())
         .then((data)=>{
             setJudge(data)

@@ -91,7 +91,7 @@ function GameNew (){
         e.preventDefault();
         console.log('enviando..')
 
-        fetch("http://localhost:2023/games/", {
+        fetch("https://react-project-01-api.vercel.app/games/", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

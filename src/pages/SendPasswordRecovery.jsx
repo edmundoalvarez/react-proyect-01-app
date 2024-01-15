@@ -14,7 +14,7 @@ function PasswordRecovery(){
     const handleFormSubmit = (e) => {
         e.preventDefault()
 
-        fetch('http://localhost:2023/api/password-recovery', {
+        fetch('https://react-project-01-api.vercel.app/api/password-recovery', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

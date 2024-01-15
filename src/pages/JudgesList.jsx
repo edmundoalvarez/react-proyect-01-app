@@ -10,7 +10,7 @@ function JudgesList(){
     const navigate = useNavigate()
 
     useEffect(()=>{
-        fetch('http://localhost:2023/judges', {
+        fetch('https://react-project-01-api.vercel.app/judges', {
             method: 'GET',
             headers: {
                 'auth-token': localStorage.getItem('token')

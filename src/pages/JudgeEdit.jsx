@@ -13,7 +13,7 @@ function GameEdit (){
 
     useEffect(()=>{
 
-        fetch(`http://localhost:2023/judges/${idJudge}`)
+        fetch(`https://react-project-01-api.vercel.app/judges/${idJudge}`)
         .then((response)=>response.json())
         .then((data)=>{
             setJudge(data)
@@ -30,7 +30,7 @@ function GameEdit (){
         e.preventDefault();
         console.log('enviando..')
 
-        fetch(`http://localhost:2023/api/judges/${idJudge}/change-email`, {
+        fetch(`https://react-project-01-api.vercel.app/api/judges/${idJudge}/change-email`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json",

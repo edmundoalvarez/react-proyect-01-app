@@ -31,7 +31,7 @@ function JudgeNew(){
             return;
         }
 
-        fetch('http://localhost:2023/api/account', {
+        fetch('https://react-project-01-api.vercel.app/api/account', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

@@ -11,7 +11,7 @@ function GameDelete (){
     const handleDeleteGame = (e) => {
         e.preventDefault()
 
-        fetch(`http://localhost:2023/games/${idGame}`, {
+        fetch(`https://react-project-01-api.vercel.app/games/${idGame}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
@@ -32,7 +32,7 @@ function GameDelete (){
 
     useEffect(()=>{
 
-        fetch(`http://localhost:2023/games/${idGame}`)
+        fetch(`https://react-project-01-api.vercel.app/games/${idGame}`)
         .then((response)=>response.json())
         .then((data)=>{
             setGame(data)

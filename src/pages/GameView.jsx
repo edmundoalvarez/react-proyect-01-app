@@ -38,7 +38,7 @@ function GameView (){
         e.preventDefault()
 
 
-        fetch(`http://localhost:2023/judges/${idJudge}/votes`, {
+        fetch(`https://react-project-01-api.vercel.app/judges/${idJudge}/votes`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -66,7 +66,7 @@ function GameView (){
 
     useEffect(()=>{
 
-        fetch(`http://localhost:2023/games/${idGame}`)
+        fetch(`https://react-project-01-api.vercel.app/games/${idGame}`)
         .then((response)=>response.json())
         .then((data)=>{
             setGame(data)

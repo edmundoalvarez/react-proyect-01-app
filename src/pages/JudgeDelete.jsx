@@ -11,7 +11,7 @@ function JudgeDelete (){
         e.preventDefault()
 
 
-        fetch(`http://localhost:2023/api/judges/${idJudge}`, {
+        fetch(`https://react-project-01-api.vercel.app/api/judges/${idJudge}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
@@ -33,7 +33,7 @@ function JudgeDelete (){
 
     useEffect(()=>{
 
-        fetch(`http://localhost:2023/judges/${idJudge}`)
+        fetch(`https://react-project-01-api.vercel.app/judges/${idJudge}`)
         .then((response)=>response.json())
         .then((data)=>{
             setJudge(data)
