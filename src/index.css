@@ -1,0 +1,226 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    min-height: 100%;
+    position: relative;
+  }
+  body {
+    margin: 0;
+    margin-bottom: 100px;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+  }
+
+.section{
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.img-home {
+    display: flex;
+    justify-self: center;
+    margin: 0px auto;
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: gray;
+}
+.img-home img {
+    width: 100%;
+    object-fit: cover;
+
+
+}
+
+.txt-home{
+    width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.game-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.votacion form{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.vote-categorie {
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+}
+.vote-categorie label {
+    color: black;
+}
+.vote-categorie  input {
+    width: 60px;
+    background-color: black;
+    color: white;
+    opacity: 0.5;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* .game-card {
+    border-bottom: 1px gray solid;
+    padding-bottom: 24px;
+} */
+
+.game-page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.game-view {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 45% !important;
+}
+
+.datos-primarios {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    background-color: rgb(45, 45, 45);
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: white;
+    margin: 20px 0px 10px 0px;
+}
+
+.datos-secundarios {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.datos-secundarios h3 {
+    background-color: rgb(102, 27, 173);
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+
+}
+.datos-secundarios > div {
+    padding:15px;
+    border-radius: 5px;
+    border: solid 1px rgb(102, 27, 173);
+    display: flex;
+    flex-direction: column;
+}
+.datos-secundarios > div p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    /* border-bottom: 1px gray solid; */
+    padding: 5px 0px;
+}
+
+.datos-secundarios > div p:last-of-type{
+    border-bottom: none;
+
+}
+
+.datos-secundarios > div p span {
+    background-color: rgb(102, 27, 173);
+    border-radius: 5px;
+    padding: 2px 15px;
+    color: white;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.datos-terciarios > div{
+    padding: 0px !important;
+    margin: 0px !important
+}
+
+.datos-terciarios > div > div {
+    background-color: rgb(102, 27, 173) !important;
+    padding: 5px 15px;
+    border-radius: 5px !important;
+
+}
+.datos-terciarios > div > div button {
+    padding: 0px
+}
+.datos-terciarios > div > div button span {
+    color: white !important;
+    font-weight: bold;
+
+}
+
+.game-form{
+    width: 45% !important;
+    border-radius: 5px;
+    overflow: hidden;
+    border: solid 1px gray;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+.game-form form {
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 15px 0px;
+}
+.game-form form div{
+    width: 100%;
+}
+
+.disabled-form input {
+    pointer-events: none;
+    background-color: #ccc;
+}
+
+.disabled-form button {
+    background-color: gray;
+}
+.disabled-form button:hover {
+    background-color: gray;
+}
