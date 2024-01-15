@@ -42,25 +42,25 @@ const Header = () => {
         </NavbarBrand>
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
           <NavbarItem>
-            <Link color="foreground" to="/">
+            <Link color="foreground" href="https://react-proyect-01-app.vercel.app/">
               Inicio
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground"  to="/games">
+            <Link color="foreground"  href="https://react-proyect-01-app.vercel.app/games">
               Juegos
             </Link>
           </NavbarItem>
           <NavbarItem>
             {localStorage.getItem('rol') === '1' && (
-              <Link color="foreground" to="/judges">
+              <Link color="foreground" href="https://react-proyect-01-app.vercel.app/judges">
                 Jueces
               </Link>
             )}
           </NavbarItem>
           <NavbarItem>
             {localStorage.getItem('rol') === '2' && (
-              <Link color="foreground" to={`/judges/${idJudge}`}>
+              <Link color="foreground" href={`https://react-proyect-01-app.vercel.app/judges/${idJudge}`}>
                 Mi Perfil
               </Link>
             )}
@@ -70,7 +70,7 @@ const Header = () => {
           {!sesionOn ? 
             <div className="flex flex-row gap-[30px]">
               <NavbarItem>
-                <Link color="secondary" to="/login">Iniciar Sesión</Link>
+                <Link color="secondary" href="https://react-proyect-01-app.vercel.app/login">Iniciar Sesión</Link>
               </NavbarItem> 
               {/* <NavbarItem>
                 <Link color="secondary" href="/signup">Crear cuenta</Link>
